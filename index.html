@@ -33,15 +33,21 @@
       </li>
 
       <li>
-        <a href="/about">Сокращенная ссылка на внутреннюю страницу</a>
+        <a href="/about">
+          Сокращённая ссылка на внутреннюю страницу
+        </a>
       </li>
 
       <li>
-        <a href="/">Сокращенная ссылка на главную страницу</a>
+        <a href="/">
+          Сокращённая ссылка на главную страницу
+        </a>
       </li>
 
       <li>
-        <a href="#form">Ссылка на фрагмент текущей страницы</a>
+        <a href="#form">
+          Ссылка на фрагмент текущей страницы
+        </a>
       </li>
 
       <li>
@@ -51,7 +57,9 @@
       </li>
 
       <li>
-        <a href="/?id=123">Ссылка с параметром id в URL</a>
+        <a href="/?id=123">
+          Ссылка с параметром id в URL
+        </a>
       </li>
 
       <li>
@@ -169,40 +177,72 @@
 
       <label>
         ФИО:<br />
-        <input type="text" name="fio" />
+        <input
+          type="text"
+          name="fio"
+          required="required"
+        />
       </label><br />
 
       <label>
         Телефон:<br />
-        <input type="tel" name="phone" />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="+79991234567"
+          pattern="\+?[0-9]{10,15}"
+          title="Введите от 10 до 15 цифр. В начале можно поставить знак +"
+          required="required"
+        />
       </label><br />
 
       <label>
         E-mail:<br />
-        <input type="email" name="email" />
+        <input
+          type="email"
+          name="email"
+          required="required"
+        />
       </label><br />
 
       <label>
         Дата рождения:<br />
-        <input type="date" name="birth-date" />
+        <input
+          type="date"
+          name="birth-date"
+          required="required"
+        />
       </label><br />
 
       Пол:<br />
 
       <label>
-        <input type="radio" name="gender" value="male" />
+        <input
+          type="radio"
+          name="gender"
+          value="male"
+          required="required"
+        />
         Мужской
       </label>
 
       <label>
-        <input type="radio" name="gender" value="female" />
+        <input
+          type="radio"
+          name="gender"
+          value="female"
+        />
         Женский
       </label><br />
 
       <label>
         Любимый язык программирования:<br />
 
-        <select name="languages[]" multiple="multiple">
+        <select
+          name="languages[]"
+          multiple="multiple"
+          required="required"
+        >
           <option value="Pascal">Pascal</option>
           <option value="C">C</option>
           <option value="C++">C++</option>
@@ -219,11 +259,19 @@
 
       <label>
         Биография:<br />
-        <textarea name="biography"></textarea>
+        <textarea
+          name="biography"
+          required="required"
+        ></textarea>
       </label><br />
 
       <label>
-        <input type="checkbox" name="contract" value="yes" />
+        <input
+          type="checkbox"
+          name="contract"
+          value="yes"
+          required="required"
+        />
         С контрактом ознакомлен(а)
       </label><br />
 
