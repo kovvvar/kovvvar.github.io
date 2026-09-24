@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-
 <html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Задание 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img id="logo" src="image.jpg" alt="Логотип сайта: цветок" width="80" height="80">
+      <nav>
+        <a href="#links">Ссылки</a>
+        <a href="#table">Таблица</a>
+        <a href="#form">Форма</a>
+      </nav>
+      <h1>Учебный сайт</h1>
+    </div>
+  </header>
 
-  <head>
-    <meta charset="UTF-8" />
-    <title>Задание 1</title>
-  </head>
-
-  <body>
-
-    <h1>Задание 1</h1>
-
-    <h2>Список гиперссылок</h2>
-
+  <main class="container">
+    <section id="links">
+      <h2>Список гиперссылок</h2>
     <ul>
       <li>
         <a href="http://kubsu.ru/">
@@ -170,9 +179,54 @@
         </a>
       </li>
     </ul>
+    </section>
 
-    <h2 id="form">Форма</h2>
+    <section id="table">
+      <h2>Таблица</h2>
+      <table>
+        <tr>
+          <th>Номер</th>
+          <th>Язык</th>
+          <th>Тип</th>
+          <th>Применение</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>C</td>
+          <td rowspan="3">Компилируемый</td>
+          <td>Системное программирование</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>C++</td>
+          <td>Приложения и игры</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Java</td>
+          <td>Серверные приложения</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>JavaScript</td>
+          <td rowspan="3">Сценарный</td>
+          <td>Веб-страницы</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>PHP</td>
+          <td>Веб-сайты</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Python</td>
+          <td>Автоматизация</td>
+        </tr>
+      </table>
+    </section>
 
+    <section id="form">
+      <h2>Форма</h2>
     <form action="/" method="POST">
 
       <label>
@@ -278,7 +332,11 @@
       <input type="submit" value="Сохранить" />
 
     </form>
+    </section>
+  </main>
 
-  </body>
-
+  <footer>
+    <div class="container">(с) 2026 Учебный сайт</div>
+  </footer>
+</body>
 </html>
