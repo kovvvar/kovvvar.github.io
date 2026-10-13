@@ -3,348 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Задание 4</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <title>Задание 5</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="top">
-    <div class="container-md px-0">
-      <div class="row no-gutters align-items-md-center">
-        <header class="col-12 col-md-8 d-flex align-items-center p-2">
-          <img id="logo" class="rounded-circle mr-3" src="image.jpg" alt="Логотип сайта: цветок" width="80" height="80">
-          <h1 class="m-0">Учебный сайт</h1>
-        </header>
-        <nav class="col-12 col-md-4 d-flex flex-column flex-md-row justify-content-md-end mt-2 mt-md-0 p-2">
-          <a class="my-1 my-md-0 ml-md-3" href="#links">Ссылки</a>
-          <a class="my-1 my-md-0 ml-md-3" href="#table">Таблица</a>
-          <a class="my-1 my-md-0 ml-md-3" href="#form">Форма</a>
-        </nav>
-      </div>
+  <header>
+    <div class="container">
+      <img id="logo" src="image.jpg" alt="Логотип сайта: цветок" width="80" height="80">
+      <h1>Учебный сайт</h1>
     </div>
-  </div>
+  </header>
 
-  <main class="container-md px-0">
-    <div class="row no-gutters">
-      <section id="links" class="col-12 col-md-8 mx-md-auto mt-2 mt-md-3 p-2">
-        <h2>Список гиперссылок</h2>
-    <ul>
-      <li>
-        <a href="http://kubsu.ru/">
-          Абсолютная ссылка на главную страницу kubsu.ru
-        </a>
-      </li>
+  <main>
+    <section>
+      <h2>Калькулятор стоимости заказа</h2>
+      <form>
+        <label>
+          Количество товара:<br>
+          <input type="text" name="quantity" inputmode="numeric" value="1">
+        </label>
 
-      <li>
-        <a href="https://kubsu.ru/">
-          Абсолютная ссылка на главную страницу kubsu.ru в протоколе HTTPS
-        </a>
-      </li>
+        <label>
+          Товар:<br>
+          <select name="product">
+            <option value="50">Тетрадь — 50 руб.</option>
+            <option value="100">Ручка — 100 руб.</option>
+            <option value="150">Альбом — 150 руб.</option>
+          </select>
+        </label>
 
-      <li>
-        <a href="https://kubsu.ru/">
-          <img class="img-fluid" src="image.jpg" alt="Цветок" width="300" />
-        </a>
-      </li>
-
-      <li>
-        <a href="/about">
-          Сокращённая ссылка на внутреннюю страницу
-        </a>
-      </li>
-
-      <li>
-        <a href="/">
-          Сокращённая ссылка на главную страницу
-        </a>
-      </li>
-
-      <li>
-        <a href="#form">
-          Ссылка на фрагмент текущей страницы
-        </a>
-      </li>
-
-      <li>
-        <a href="/?name=Ivan&amp;age=20&amp;city=Krasnodar">
-          Ссылка с тремя параметрами в URL
-        </a>
-      </li>
-
-      <li>
-        <a href="/?id=123">
-          Ссылка с параметром id в URL
-        </a>
-      </li>
-
-      <li>
-        <a href="./demo.html">
-          Относительная ссылка на страницу в текущем каталоге
-        </a>
-      </li>
-
-      <li>
-        <a href="./about/about.html">
-          Относительная ссылка на страницу в каталоге about
-        </a>
-      </li>
-
-      <li>
-        <a href="../index.html">
-          Относительная ссылка на страницу уровнем выше текущего каталога
-        </a>
-      </li>
-
-      <li>
-        <a href="../../index.html">
-          Относительная ссылка на страницу двумя уровнями выше
-        </a>
-      </li>
-
-      <li>
-        <p>
-          Это контекстная ссылка в тексте абзаца, ведущая на
-          <a href="https://kubsu.ru/">сайт КубГУ</a>.
-        </p>
-      </li>
-
-      <li>
-        <a href="https://ru.wikipedia.org/wiki/HTML#HTML5">
-          Ссылка на фрагмент страницы стороннего сайта
-        </a>
-      </li>
-
-      <li>
-        <img
-          class="img-fluid"
-          src="image.jpg"
-          width="600"
-          alt="Цветок с активными областями"
-          usemap="#flower-map"
-        />
-
-        <map name="flower-map">
-          <area
-            shape="rect"
-            coords="20,20,200,150"
-            href="https://kubsu.ru/"
-            alt="Прямоугольная область"
-          />
-
-          <area
-            shape="circle"
-            coords="300,220,80"
-            href="https://example.com/"
-            alt="Круглая область"
-          />
-        </map>
-      </li>
-
-      <li>
-        <a href="">Ссылка с пустым href</a>
-      </li>
-
-      <li>
-        <a>Ссылка без href</a>
-      </li>
-
-      <li>
-        <a href="https://example.com/" rel="nofollow">
-          Ссылка, по которой запрещён переход поисковикам
-        </a>
-      </li>
-
-      <li>
-        <!--noindex-->
-        <a href="https://example.com/">
-          Ссылка, запрещённая для индексации поисковиками
-        </a>
-        <!--/noindex-->
-      </li>
-
-      <li>
-        Нумерованный список ссылок с подписями title:
-
-        <ol>
-          <li>
-            <a href="https://kubsu.ru/" title="Официальный сайт КубГУ">
-              Сайт КубГУ
-            </a>
-          </li>
-
-          <li>
-            <a href="https://example.com/" title="Учебный пример сайта">
-              Сайт example.com
-            </a>
-          </li>
-        </ol>
-      </li>
-
-      <li>
-        <a href="ftp://example.com/file.txt" title="Требуется авторизация">
-          Ссылка на файл на FTP-сервере с авторизацией
-        </a>
-      </li>
-    </ul>
-      </section>
-
-      <section id="table" class="col-12 col-md-8 mx-md-auto order-first order-md-0 overflow-auto mt-2 mt-md-3 p-2">
-        <h2>Таблица</h2>
-      <table class="table table-sm mb-0">
-        <tr>
-          <th>Номер</th>
-          <th>Язык</th>
-          <th>Тип</th>
-          <th>Применение</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>C</td>
-          <td rowspan="3">Компилируемый</td>
-          <td>Системное программирование</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>C++</td>
-          <td>Приложения и игры</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Java</td>
-          <td>Серверные приложения</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>JavaScript</td>
-          <td rowspan="3">Сценарный</td>
-          <td>Веб-страницы</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>PHP</td>
-          <td>Веб-сайты</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>Python</td>
-          <td>Автоматизация</td>
-        </tr>
-      </table>
-      </section>
-
-      <section id="form" class="col-12 col-md-8 mx-md-auto mt-2 mt-md-3 p-2">
-        <h2>Форма</h2>
-    <form action="/" method="POST">
-
-      <label>
-        ФИО:<br />
-        <input
-          type="text"
-          name="fio"
-          required="required"
-        />
-      </label><br />
-
-      <label>
-        Телефон:<br />
-        <input
-          type="tel"
-          name="phone"
-          placeholder="+79991234567"
-          pattern="\+?[0-9]{10,15}"
-          title="Введите от 10 до 15 цифр. В начале можно поставить знак +"
-          required="required"
-        />
-      </label><br />
-
-      <label>
-        E-mail:<br />
-        <input
-          type="email"
-          name="email"
-          required="required"
-        />
-      </label><br />
-
-      <label>
-        Дата рождения:<br />
-        <input
-          type="date"
-          name="birth-date"
-          required="required"
-        />
-      </label><br />
-
-      Пол:<br />
-
-      <label>
-        <input
-          type="radio"
-          name="gender"
-          value="male"
-          required="required"
-        />
-        Мужской
-      </label>
-
-      <label>
-        <input
-          type="radio"
-          name="gender"
-          value="female"
-        />
-        Женский
-      </label><br />
-
-      <label>
-        Любимый язык программирования:<br />
-
-        <select
-          name="languages[]"
-          multiple="multiple"
-          required="required"
-        >
-          <option value="Pascal">Pascal</option>
-          <option value="C">C</option>
-          <option value="C++">C++</option>
-          <option value="JavaScript">JavaScript</option>
-          <option value="PHP">PHP</option>
-          <option value="Python">Python</option>
-          <option value="Java">Java</option>
-          <option value="Haskell">Haskell</option>
-          <option value="Clojure">Clojure</option>
-          <option value="Prolog">Prolog</option>
-          <option value="Scala">Scala</option>
-        </select>
-      </label><br />
-
-      <label>
-        Биография:<br />
-        <textarea
-          name="biography"
-          required="required"
-        ></textarea>
-      </label><br />
-
-      <label>
-        <input
-          type="checkbox"
-          name="contract"
-          value="yes"
-          required="required"
-        />
-        С контрактом ознакомлен(а)
-      </label><br />
-
-      <input type="submit" value="Сохранить" />
-
-    </form>
-      </section>
-    </div>
+        <button id="calculate-button" type="submit">Рассчитать</button>
+      </form>
+      <p id="result" aria-live="polite"></p>
+    </section>
   </main>
 
-  <footer class="mt-2 mt-md-3">
-    <div class="container-md px-2 py-3">(с) 2026 Учебный сайт</div>
+  <footer>
+    <div class="container">(с) 2026 Учебный сайт</div>
   </footer>
 </body>
 </html>

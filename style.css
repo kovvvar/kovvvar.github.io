@@ -1,47 +1,64 @@
+/* Оформление по лабе 4, CSS и Flexbox по лекциям 2 и 3. */
 body {
+  margin: 0;
   font-family: serif;
 }
 
-a {
-  text-decoration: underline;
-}
-
 header,
-nav,
 main section,
 footer {
   background-color: #729bc8;
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
 #logo {
+  margin-right: 16px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
-.table th,
-.table td {
-  border: 1px solid black;
+h1 {
+  margin: 0;
 }
 
-tr:nth-child(even) {
-  background-color: #dce8f5;
+main {
+  max-width: 640px;
+  margin: 8px auto;
 }
 
-tr:nth-child(odd) {
-  background-color: white;
+main section {
+  padding: 8px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
 }
 
 form input,
-form select,
-form textarea {
+form select {
+  box-sizing: border-box;
   max-width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .container-md {
-    max-width: 960px;
-  }
+footer .container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 
-  .top {
-    background-color: #729bc8;
+@media screen and (min-width: 768px) {
+  main {
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 }
