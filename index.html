@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Задание 5</title>
+  <title>Задание 6</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -17,23 +17,45 @@
 
   <main>
     <section>
-      <h2>Калькулятор стоимости заказа</h2>
-      <form>
+      <h2>Калькулятор стоимости услуги</h2>
+      <form id="calculator">
         <label>
-          Количество товара:<br>
+          Количество экземпляров:<br>
           <input type="text" name="quantity" inputmode="numeric" value="1">
         </label>
 
-        <label>
-          Товар:<br>
-          <select name="product">
-            <option value="50">Тетрадь — 50 руб.</option>
-            <option value="100">Ручка — 100 руб.</option>
-            <option value="150">Альбом — 150 руб.</option>
-          </select>
-        </label>
+        <fieldset>
+          <legend>Тип услуги:</legend>
+          <label>
+            <input type="radio" name="serviceType" value="1" checked>
+            Черно-белая печать — 10 руб./экз.
+          </label>
+          <label>
+            <input type="radio" name="serviceType" value="2">
+            Фотопечать — 50 руб./экз.
+          </label>
+          <label>
+            <input type="radio" name="serviceType" value="3">
+            Переплет — 100 руб./экз.
+          </label>
+        </fieldset>
 
-        <button id="calculate-button" type="submit">Рассчитать</button>
+        <div id="option-group">
+          <label>
+            Бумага для фотопечати:<br>
+            <select name="serviceOption">
+              <option value="glossy">Глянцевая — без доплаты</option>
+              <option value="matte">Матовая — +20 руб./экз.</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="property-group">
+          <label>
+            <input type="checkbox" name="property">
+            Твердая обложка — +50 руб./экз.
+          </label>
+        </div>
       </form>
       <p id="result" aria-live="polite"></p>
     </section>

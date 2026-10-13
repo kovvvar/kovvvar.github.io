@@ -45,6 +45,15 @@ form label {
   margin-bottom: 10px;
 }
 
+fieldset {
+  margin: 0 0 10px;
+}
+
+#option-group,
+#property-group {
+  display: none;
+}
+
 form input,
 form select {
   box-sizing: border-box;
