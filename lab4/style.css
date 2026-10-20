@@ -1,0 +1,47 @@
+body {
+  font-family: serif;
+}
+
+a {
+  text-decoration: underline;
+}
+
+header,
+nav,
+main section,
+footer {
+  background-color: #729bc8;
+}
+
+#logo {
+  object-fit: cover;
+}
+
+.table th,
+.table td {
+  border: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: #dce8f5;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+form input,
+form select,
+form textarea {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .container-md {
+    max-width: 960px;
+  }
+
+  .top {
+    background-color: #729bc8;
+  }
+}

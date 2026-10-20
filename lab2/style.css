@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  background-color: #729bc8;
+}
+
+header .container {
+  min-height: 100px;
+}
+
+#logo {
+  float: left;
+  margin-right: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  margin-left: 15px;
+}
+
+header h1 {
+  margin: 20px 0 0;
+}
+
+main section {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #729bc8;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+#links img {
+  max-width: 100%;
+  height: auto;
+}
+
+#table {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #dce8f5;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+form input,
+form select,
+form textarea {
+  max-width: 100%;
+}
+
+footer .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,73 @@
+/* Оформление по лабе 4, CSS и Flexbox по лекциям 2 и 3. */
+body {
+  margin: 0;
+  font-family: serif;
+}
+
+header,
+main section,
+footer {
+  background-color: #729bc8;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  margin-right: 16px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 640px;
+  margin: 8px auto;
+}
+
+main section {
+  padding: 8px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin: 0 0 10px;
+}
+
+#option-group,
+#property-group {
+  display: none;
+}
+
+form input,
+form select {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+footer .container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}

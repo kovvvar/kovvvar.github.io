@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Задание 5</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img id="logo" src="image.jpg" alt="Логотип сайта: цветок" width="80" height="80">
+      <h1>Учебный сайт</h1>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Калькулятор стоимости заказа</h2>
+      <form>
+        <label>
+          Количество товара:<br>
+          <input type="text" name="quantity" inputmode="numeric" value="1">
+        </label>
+
+        <label>
+          Товар:<br>
+          <select name="product">
+            <option value="50">Тетрадь — 50 руб.</option>
+            <option value="100">Ручка — 100 руб.</option>
+            <option value="150">Альбом — 150 руб.</option>
+          </select>
+        </label>
+
+        <button id="calculate-button" type="submit">Рассчитать</button>
+      </form>
+      <p id="result" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">(с) 2026 Учебный сайт</div>
+  </footer>
+</body>
+</html>

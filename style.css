@@ -1,4 +1,4 @@
-/* Оформление по лабе 4, CSS и Flexbox по лекциям 2 и 3. */
+/* Оформление как в лабе 4, CSS и Flexbox по лекциям 2 и 3. */
 body {
   margin: 0;
   font-family: serif;
@@ -40,24 +40,8 @@ main section {
   padding: 8px;
 }
 
-form label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-fieldset {
-  margin: 0 0 10px;
-}
-
-#option-group,
-#property-group {
-  display: none;
-}
-
-form input,
-form select {
-  box-sizing: border-box;
-  max-width: 100%;
+li {
+  margin-bottom: 8px;
 }
 
 footer .container {

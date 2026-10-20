@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Задание 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top">
+    <div class="container top-content">
+      <header>
+        <img id="logo" src="image.jpg" alt="Логотип сайта: цветок" width="80" height="80">
+        <h1>Учебный сайт</h1>
+      </header>
+      <nav>
+        <a href="#links">Ссылки</a>
+        <a href="#table">Таблица</a>
+        <a href="#form">Форма</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <section id="links">
+      <h2>Список гиперссылок</h2>
+    <ul>
+      <li>
+        <a href="http://kubsu.ru/">
+          Абсолютная ссылка на главную страницу kubsu.ru
+        </a>
+      </li>
+
+      <li>
+        <a href="https://kubsu.ru/">
+          Абсолютная ссылка на главную страницу kubsu.ru в протоколе HTTPS
+        </a>
+      </li>
+
+      <li>
+        <a href="https://kubsu.ru/">
+          <img src="image.jpg" alt="Цветок" width="300" />
+        </a>
+      </li>
+
+      <li>
+        <a href="/about">
+          Сокращённая ссылка на внутреннюю страницу
+        </a>
+      </li>
+
+      <li>
+        <a href="/">
+          Сокращённая ссылка на главную страницу
+        </a>
+      </li>
+
+      <li>
+        <a href="#form">
+          Ссылка на фрагмент текущей страницы
+        </a>
+      </li>
+
+      <li>
+        <a href="/?name=Ivan&amp;age=20&amp;city=Krasnodar">
+          Ссылка с тремя параметрами в URL
+        </a>
+      </li>
+
+      <li>
+        <a href="/?id=123">
+          Ссылка с параметром id в URL
+        </a>
+      </li>
+
+      <li>
+        <a href="./demo.html">
+          Относительная ссылка на страницу в текущем каталоге
+        </a>
+      </li>
+
+      <li>
+        <a href="./about/about.html">
+          Относительная ссылка на страницу в каталоге about
+        </a>
+      </li>
+
+      <li>
+        <a href="../index.html">
+          Относительная ссылка на страницу уровнем выше текущего каталога
+        </a>
+      </li>
+
+      <li>
+        <a href="../../index.html">
+          Относительная ссылка на страницу двумя уровнями выше
+        </a>
+      </li>
+
+      <li>
+        <p>
+          Это контекстная ссылка в тексте абзаца, ведущая на
+          <a href="https://kubsu.ru/">сайт КубГУ</a>.
+        </p>
+      </li>
+
+      <li>
+        <a href="https://ru.wikipedia.org/wiki/HTML#HTML5">
+          Ссылка на фрагмент страницы стороннего сайта
+        </a>
+      </li>
+
+      <li>
+        <img
+          src="image.jpg"
+          width="600"
+          alt="Цветок с активными областями"
+          usemap="#flower-map"
+        />
+
+        <map name="flower-map">
+          <area
+            shape="rect"
+            coords="20,20,200,150"
+            href="https://kubsu.ru/"
+            alt="Прямоугольная область"
+          />
+
+          <area
+            shape="circle"
+            coords="300,220,80"
+            href="https://example.com/"
+            alt="Круглая область"
+          />
+        </map>
+      </li>
+
+      <li>
+        <a href="">Ссылка с пустым href</a>
+      </li>
+
+      <li>
+        <a>Ссылка без href</a>
+      </li>
+
+      <li>
+        <a href="https://example.com/" rel="nofollow">
+          Ссылка, по которой запрещён переход поисковикам
+        </a>
+      </li>
+
+      <li>
+        <!--noindex-->
+        <a href="https://example.com/">
+          Ссылка, запрещённая для индексации поисковиками
+        </a>
+        <!--/noindex-->
+      </li>
+
+      <li>
+        Нумерованный список ссылок с подписями title:
+
+        <ol>
+          <li>
+            <a href="https://kubsu.ru/" title="Официальный сайт КубГУ">
+              Сайт КубГУ
+            </a>
+          </li>
+
+          <li>
+            <a href="https://example.com/" title="Учебный пример сайта">
+              Сайт example.com
+            </a>
+          </li>
+        </ol>
+      </li>
+
+      <li>
+        <a href="ftp://example.com/file.txt" title="Требуется авторизация">
+          Ссылка на файл на FTP-сервере с авторизацией
+        </a>
+      </li>
+    </ul>
+    </section>
+
+    <section id="table">
+      <h2>Таблица</h2>
+      <table>
+        <tr>
+          <th>Номер</th>
+          <th>Язык</th>
+          <th>Тип</th>
+          <th>Применение</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>C</td>
+          <td rowspan="3">Компилируемый</td>
+          <td>Системное программирование</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>C++</td>
+          <td>Приложения и игры</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Java</td>
+          <td>Серверные приложения</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>JavaScript</td>
+          <td rowspan="3">Сценарный</td>
+          <td>Веб-страницы</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>PHP</td>
+          <td>Веб-сайты</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Python</td>
+          <td>Автоматизация</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="form">
+      <h2>Форма</h2>
+    <form action="/" method="POST">
+
+      <label>
+        ФИО:<br />
+        <input
+          type="text"
+          name="fio"
+          required="required"
+        />
+      </label><br />
+
+      <label>
+        Телефон:<br />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="+79991234567"
+          pattern="\+?[0-9]{10,15}"
+          title="Введите от 10 до 15 цифр. В начале можно поставить знак +"
+          required="required"
+        />
+      </label><br />
+
+      <label>
+        E-mail:<br />
+        <input
+          type="email"
+          name="email"
+          required="required"
+        />
+      </label><br />
+
+      <label>
+        Дата рождения:<br />
+        <input
+          type="date"
+          name="birth-date"
+          required="required"
+        />
+      </label><br />
+
+      Пол:<br />
+
+      <label>
+        <input
+          type="radio"
+          name="gender"
+          value="male"
+          required="required"
+        />
+        Мужской
+      </label>
+
+      <label>
+        <input
+          type="radio"
+          name="gender"
+          value="female"
+        />
+        Женский
+      </label><br />
+
+      <label>
+        Любимый язык программирования:<br />
+
+        <select
+          name="languages[]"
+          multiple="multiple"
+          required="required"
+        >
+          <option value="Pascal">Pascal</option>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="PHP">PHP</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="Haskell">Haskell</option>
+          <option value="Clojure">Clojure</option>
+          <option value="Prolog">Prolog</option>
+          <option value="Scala">Scala</option>
+        </select>
+      </label><br />
+
+      <label>
+        Биография:<br />
+        <textarea
+          name="biography"
+          required="required"
+        ></textarea>
+      </label><br />
+
+      <label>
+        <input
+          type="checkbox"
+          name="contract"
+          value="yes"
+          required="required"
+        />
+        С контрактом ознакомлен(а)
+      </label><br />
+
+      <input type="submit" value="Сохранить" />
+
+    </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">(с) 2026 Учебный сайт</div>
+  </footer>
+</body>
+</html>
