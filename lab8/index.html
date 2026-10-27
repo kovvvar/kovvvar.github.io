@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Задание 8</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img id="logo" src="image.jpg" alt="Логотип сайта: цветок" width="80" height="80">
+      <h1>Учебный сайт</h1>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Обратная связь</h2>
+      <p>Если у вас есть вопрос, нажмите на кнопку и напишите нам.</p>
+      <button type="button" id="open-button">Написать нам</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">(с) 2026 Учебный сайт</div>
+  </footer>
+
+  <!-- Попап с формой, по умолчанию скрыт стилем display: none -->
+  <div id="popup">
+    <div class="popup-window" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+      <button type="button" id="close-button" aria-label="Закрыть форму">×</button>
+      <h2 id="popup-title">Форма обратной связи</h2>
+      <form id="feedback-form">
+        <label>
+          ФИО:<br>
+          <input type="text" name="fio" autocomplete="name" required>
+        </label>
+        <label>
+          Email:<br>
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          Телефон:<br>
+          <input type="tel" name="phone" autocomplete="tel" required>
+        </label>
+        <label>
+          Организация:<br>
+          <input type="text" name="organization" autocomplete="organization">
+        </label>
+        <label>
+          Сообщение:<br>
+          <textarea name="message" rows="3" required></textarea>
+        </label>
+        <label class="agree">
+          <input type="checkbox" name="agree" required>
+          Согласен с политикой обработки персональных данных
+        </label>
+        <button type="submit" id="send-button">Отправить</button>
+      </form>
+      <p id="status" aria-live="polite"></p>
+    </div>
+  </div>
+</body>
+</html>
